@@ -1,14 +1,14 @@
 FROM node:14
 
 # Create app directory
-WORKDIR /app/backend
+WORKDIR /app
 
 # Install app dependencies
-COPY backend/package*.json ./
+COPY package*.json ./
 RUN npm install
 
 # Bundle app source
-COPY backend/ ./
+COPY . .
 
 # Expose the port the app runs on
 EXPOSE 80
