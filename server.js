@@ -9,7 +9,7 @@
 //   res.end('Hello World\n');
 // });
 
-// const PORT = 8000;
+// const PORT = 80;
 // const HOSTNAME = '0.0.0.0';
 
 // server.listen(PORT, HOSTNAME, () => {
@@ -25,7 +25,7 @@
 const http = require('http');
 const { MongoClient } = require('mongodb');
 
-const PORT = 8000;
+const PORT = 80;
 const HOSTNAME = '0.0.0.0';
 
 const mongoUri = 'mongodb+srv://<user_name>:<password>s@<mongo_cluster_url>';
@@ -67,7 +67,7 @@ startServer();
 const http = require('http');
 const mongoose = require('mongoose');
 
-const PORT = 8000;
+const PORT = 80;
 const HOSTNAME = '0.0.0.0';
 
 const uri = "mongodb+srv://suraj_admin:suraj_admin@cluster0.dme40pl.mongodb.net/?retryWrites=true&w=majority";
@@ -129,7 +129,7 @@ const url = require('url');
 const mongoose = require('mongoose');
 const { StringDecoder } = require('string_decoder');
 
-const PORT = 8000;
+const PORT = 80;
 const HOSTNAME = '0.0.0.0';
 
 const server = http.createServer((req, res) => {
@@ -228,7 +228,7 @@ const slambookSchema = new mongoose.Schema({
 const SlamBook = mongoose.model('SlamBook', slambookSchema);
 // Routes
 app.get('/', (req, res) => {
-  res.json({ message: `Yay, app is running on port ${PORT}` });
+  res.json({ message: `Yay, app is running hvdhbvhjdbf on port ${PORT}` });
 });
 
 app.get('/slambook', async (req, res) => {
