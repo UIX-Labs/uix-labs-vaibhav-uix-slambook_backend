@@ -189,7 +189,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
-const PORT = 0;
+const PORT = 80;
 const HOSTNAME = '0.0.0.0';
 
 const app = express();
